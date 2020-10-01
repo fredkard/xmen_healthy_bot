@@ -12,11 +12,11 @@ from datetime import datetime
 
 now = datetime.now()
 sekarang = now.strftime("%Y-%m-%d %H:%M:%S")
-db = MySQLdb.connect(host="localhost",user="root",passwd="mousehunt",db="xmen_healthy_bot")
+db = MySQLdb.connect(host="localhost",user="root",passwd="password",db="xmen_healthy_bot")
 
 cur = db.cursor()
 #bot xmen healthy
-bot = '1291494347:AAGR1dR7LOnPUIwMVhV3oZ_tCO6U8JhRQmE'
+bot = '1291494347:[token]'
 
 r = requests.get('https://api.telegram.org/bot%s/getupdates?timeout=30' %bot)
 jsondata = r.content
